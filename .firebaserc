@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "pmariano-projects",
+    "staging": "pmariano-id"
+  }
+}

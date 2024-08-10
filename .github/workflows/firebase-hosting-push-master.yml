@@ -14,7 +14,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # O la versión de Node.js que estés usando
+          node-version: '18' # O la versión de Node.js que estés usando
         
       - name: Install Firebase CLI
         run: npm install -g firebase-tools

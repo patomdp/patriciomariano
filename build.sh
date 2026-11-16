@@ -20,6 +20,8 @@ tar \
   --exclude=./screenshot.png \
   --exclude='screen-.png' \
   -cf - . | tar -xf - -C dist
+# Seguridad: ningún archivo oculto (.git, .env, .gitignore...) llega a la web.
+find dist -mindepth 1 -name ".*" -prune -exec rm -rf {} +
 # Seguridad extra: no publicar nada que supere el límite de 25 MB de Pages.
 find dist -type f -size +25M -print -delete
 echo "dist listo: $(find dist -type f | wc -l) archivos, $(du -sh dist | cut -f1)"

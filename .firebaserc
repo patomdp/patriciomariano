@@ -1,9 +1,0 @@
-{
-  "projects": {
-    "default": "patricio-mariano",
-    "staging": "patricio-mariano"
-  },
-  "targets": {},
-  "etags": {},
-  "dataconnectEmulatorConfig": {}
-}

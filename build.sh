@@ -15,6 +15,7 @@ tar \
   --exclude=./firebase.json \
   --exclude=./.firebaserc \
   --exclude=./build.sh \
+  --exclude=./wrangler.jsonc \
   --exclude=./README.md \
   --exclude=./screenshot.png \
   --exclude='screen-.png' \
